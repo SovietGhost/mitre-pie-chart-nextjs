@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: xtm-web
+    restart: unless-stopped
+    ports:
+      - "5672:5672"
+    environment:
+      - NODE_ENV=production
+      - PORT=5672
+      - API_URL=http://ciru.azercell.com/assets/layers/attack_overlay_detection.json
