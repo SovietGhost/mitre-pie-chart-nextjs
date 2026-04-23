@@ -1,3 +1,5 @@
+"use client"
+
 import { AttackPieChart } from "@/components/pie-chart";
 import { Spinner } from "@/components/ui/spinner";
 import { useDetectionScoreChart, useSummary, useTopGroupsChart } from "@/lib/api";
